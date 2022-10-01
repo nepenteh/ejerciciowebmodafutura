@@ -1,0 +1,437 @@
+/****************** GENERAL ***************/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/******************** CABECERA *************/
+
+header {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.3px;
+}
+
+/*** fila superior de la cabecera */
+
+.hsuperior {
+  border-bottom: 1px solid lightgray;
+  height: 25px;
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+.menu-secundario {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding-left: 10px;
+}
+
+.menu-secundario ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-secundario ul li a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+}
+
+.menu-secundario ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*** fila intermedia de la cabecera */
+
+.hmedio {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  height: 90px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* boton menu */
+
+.boton-menu {
+  display: inline-block;
+  position: relative;
+  min-width: 23px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.boton-menu span {
+  position: absolute;
+  width: 100%;
+  border: 1px black solid;
+  transition: 0.7s;
+}
+
+.boton-menu span:first-child {
+  top: 0;
+}
+
+.boton-menu:hover span:first-child {
+  top: 100%;
+}
+
+.boton-menu span:nth-child(2) {
+  top: 50%;
+}
+
+.boton-menu span:last-child {
+  top: 100%;
+}
+
+.boton-menu:hover span:last-child {
+  top: 0%;
+}
+
+/* logo */
+
+.logo {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.enlacelogo img {
+  opacity: 100%;
+  transition: 0.7s;
+}
+
+.enlacelogo:hover img {
+  opacity: 50%;
+}
+
+/* menu principal */
+
+.menu-principal {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -22px;
+  font-size: 15px;
+}
+
+.menu-principal ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-principal ul li a span {
+  display: block;
+  border-bottom: 2px solid black;
+  width: 0%;
+  transition: 0.7s;
+}
+
+.menu-principal ul li a:hover span {
+  width: 100%;
+}
+
+.menu-principal ul {
+  padding-left: 0px;
+}
+
+.menu-principal ul li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+/* botón newsletter */
+
+.newsletter {
+  margin-bottom: -22px;
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+
+.newsletter a {
+  display: block;
+  background-color: rgb(212, 223, 192);
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.newsletter a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*** fila inferior de la cabecera */
+
+.hinferior {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  font-size: 12px;
+}
+
+.hinferior .tendencia {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding-left: 10px;
+}
+
+.hinferior .marcador {
+  color: gray;
+  font-size: 20px;
+}
+
+.hinferior .tema {
+  color: white;
+  font-weight: bold;
+}
+
+.hinferior a {
+  color: rgb(212, 223, 192);
+  text-decoration: none;
+}
+
+.hinferior a:hover {
+  text-decoration: underline;
+}
+
+/****************** MAIN *******************/
+
+main {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 20px 10px;
+}
+
+/*** Sección Noticia Principal */
+
+.noticiaprincipal {
+  margin-bottom: 30px;
+}
+
+.noticiaprincipal .entrada {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.entrada .intro {
+  width: 45%;
+  text-align: center;
+}
+
+.entrada .intro a {
+  text-decoration: none;
+  color: black;
+}
+
+.entrada .intro h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: rgb(127, 151, 84);
+  letter-spacing: 1px;
+}
+
+.entrada .intro h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+
+.entrada .intro a:hover h1 {
+  text-decoration: underline;
+}
+
+.entrada .intro .introarticulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.entrada .intro .autor {
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  color: rgb(59, 70, 38);
+}
+
+.entrada .fotonoticia {
+  width: 45%;
+}
+
+.fotonoticia img {
+  width: 100%;
+}
+
+.enlaceimagen img {
+    transition: .8s;
+}
+
+.enlaceimagen:hover img {
+    opacity: 60%;
+}
+
+.noticias {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.noticias .entrada {
+  width: 280px;
+  margin: 20px 20px;
+}
+
+.noticias .entrada .intro {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.noticias .entrada .intro h2 {
+  font-size: 12px;
+}
+
+.noticias .entrada .intro h1 {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.noticias .entrada .intro .introarticulo {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.noticias .entrada .fotonoticia {
+  width: 100%;
+}
+
+.siguenos {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.siguenos p {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: 42px;
+}
+
+.siguenos ul {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.siguenos ul li {
+  display: inline-block;
+  margin: 0px 40px;
+}
+
+
+.politicas {
+  margin-top: 10px;
+}
+
+.politicas ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.politicas ul li {
+  display: block;
+  margin: 8px 8px;
+}
+
+.politicas ul li a {
+  font-family: "Raleway", sans-serif;
+  color: gray;
+  text-decoration: none;
+}
+
+.politicas ul li a:hover {
+  text-decoration: underline;
+}
+
+/********************* PIE ********************/
+
+footer {
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  padding: 40px 0px 20px 0px;
+}
+
+footer .datos-contacto h2 {
+    font-size: 35px;
+}
+
+footer hr {
+    width: 50px;
+    border-bottom: solid 1px white;
+    margin: 10px auto;
+
+}
+
+footer .datos-contacto {
+  text-align: center;
+}
+
+footer .datos-contacto .telefono {
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+
+footer .datos-contacto .telefono a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .datos-contacto .telefono a:hover {
+    color: lightgray;
+}
+
+footer .datos-contacto .telefono svg {
+    fill: white;
+}
+
+
+footer .publicaciones {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+footer .publicaciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  footer .publicaciones li {
+    display: block;
+    margin: 8px 25px;
+  }
+  
+  footer .publicaciones li a {
+    font-family: "Raleway", sans-serif;
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  footer .publicaciones li a:hover {
+    color: white;
+  }
